@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      1 min read
+      2 min read
     
 </span></p>
 
@@ -238,6 +238,7 @@ Scams
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="While-Loops">While Loops<a class="anchor-link" href="#While-Loops"> </a></h2><p>While loops are very similar to recursive loops, but with a different syntax.</p>
+<p>While loops don't require a function that is then called again within the original function until a condition is met. While functions perform all the way through, and if the condition is still satisfied afterward, the while loop will repeat again.</p>
 
 </div>
 </div>
@@ -257,14 +258,6 @@ Scams
         <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
 <span class="c1"># This will print the whole list</span>
 <span class="n">while_loop</span><span class="p">()</span>
-<span class="c1"># If we wanted to customize the parameters, we could do something like this</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;---&quot;</span><span class="p">)</span>
-<span class="k">def</span> <span class="nf">while_loop2</span><span class="p">(</span><span class="n">i</span><span class="p">):</span>
-    <span class="k">while</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="nb">list</span><span class="p">):</span>
-        <span class="nb">print</span><span class="p">(</span><span class="nb">list</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
-        <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
-<span class="c1"># This will print only the last two entries in the list</span>
-<span class="n">while_loop2</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -281,9 +274,6 @@ Scams
 Text
 For
 Learning
----
-For
-Learning
 </pre>
 </div>
 </div>
@@ -296,9 +286,53 @@ Learning
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Hack-for-this-Lesson">Hack for this Lesson<a class="anchor-link" href="#Hack-for-this-Lesson"> </a></h2><p>Create a recursive loop or a while loop to perform a certain <em>specific</em> task. This can be applying a function to a list (we like this one), altering or analyzing a certain input or parameter, or anything else as long as it has a specific function. Then, create two other <em>types</em> of loops (whichever two you didn't already do) that serve the same function.</p>
-<p>At the end, reflect on which type of loop was the easiest/most efficient to use and consider why.</p>
+<h2 id="A-Hack-for-This-Lesson">A Hack for This Lesson<a class="anchor-link" href="#A-Hack-for-This-Lesson"> </a></h2><p>This isn't homework, but doing this and showing it on your review ticket will definitely boost your grade!</p>
+<blockquote><p>Create a loop that <mark>converts 8-bit binary values</mark> from a list into <mark>decimal numbers</mark>. Then, after the value is determined, <mark>remove all the values greater than 100</mark> from the list using a list-related function you've been taught before. <mark>Print the new list</mark> when done.</p>
+<p>Once you've done this with one of the types of loops discussed in this lesson, create a function that does the same thing with a <em>different</em> type of loop.</p>
+</blockquote>
 
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">binarylist</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="s2">&quot;01001001&quot;</span><span class="p">,</span> <span class="s2">&quot;10101010&quot;</span><span class="p">,</span> <span class="s2">&quot;10010110&quot;</span><span class="p">,</span> <span class="s2">&quot;0010111&quot;</span><span class="p">,</span> <span class="s2">&quot;11101100&quot;</span><span class="p">,</span> <span class="s2">&quot;11010001&quot;</span><span class="p">,</span> <span class="s2">&quot;10000001&quot;</span>
+<span class="p">]</span>
+
+<span class="k">def</span> <span class="nf">binary_convert</span><span class="p">(</span><span class="n">binary</span><span class="p">):</span>
+    <span class="c1">#use this function to convert every binary value in binarylist to decimal</span>
+    <span class="c1">#afterward, get rid of the values that are greater than 100 in decimal</span>
+
+<span class="c1">#when done, print the results</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>At the end, reflect on which type of loop was the easiest/most efficient to use and consider why.</p>
+<p><button id="pophint" style="padding:5px;font-family:'Comic Sans MS'">HINT</button></p>
+<p id="hinttext" style="font-family:'Comic Sans MS'">
+  <!--TEXT GOES HERE-->
+</p><script>
+    var hint_txt = "Each bit of binary has its own decimal value when equal to 1. For example, the rightmost bit is always equal to 1 in decimal, and the leftmost bit of 8-bit binary is equal to 128 in decimal. Based on this knowledge, you can reverse-engineer binary bit-by-bit using iteration.";
+    var hint_btn = document.getElementById("pophint");
+    hint_btn.onclick = function() {
+        document.getElementById("hinttext").innerHTML = hint_txt;
+        hint_btn.style = "display:none";
+    };
+</script>
 </div>
 </div>
 </div>
