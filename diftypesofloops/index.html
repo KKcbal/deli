@@ -8,17 +8,17 @@
 <meta name="generator" content="Jekyll v4.1.1" />
 <meta property="og:title" content="Different Types of Loops" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="A sample subject for our lesson on Iteration." />
-<meta property="og:description" content="A sample subject for our lesson on Iteration." />
-<link rel="canonical" href="https://kkcbal.github.io/deli/iterationsample/" />
-<meta property="og:url" content="https://kkcbal.github.io/deli/iterationsample/" />
+<meta name="description" content="A lesson on different types of loops you can use." />
+<meta property="og:description" content="A lesson on different types of loops you can use." />
+<link rel="canonical" href="https://kkcbal.github.io/deli/diftypesofloops/" />
+<meta property="og:url" content="https://kkcbal.github.io/deli/diftypesofloops/" />
 <meta property="og:site_name" content="DeLi" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2022-11-17T00:00:00-06:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Different Types of Loops" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-11-17T00:00:00-06:00","datePublished":"2022-11-17T00:00:00-06:00","description":"A sample subject for our lesson on Iteration.","headline":"Different Types of Loops","mainEntityOfPage":{"@type":"WebPage","@id":"https://kkcbal.github.io/deli/iterationsample/"},"url":"https://kkcbal.github.io/deli/iterationsample/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-11-17T00:00:00-06:00","datePublished":"2022-11-17T00:00:00-06:00","description":"A lesson on different types of loops you can use.","headline":"Different Types of Loops","mainEntityOfPage":{"@type":"WebPage","@id":"https://kkcbal.github.io/deli/diftypesofloops/"},"url":"https://kkcbal.github.io/deli/diftypesofloops/"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/deli/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://kkcbal.github.io/deli/feed.xml" title="DeLi" /><link rel="shortcut icon" type="image/x-icon" href="/deli/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -73,23 +73,16 @@ window.onload = wrap_img;
         <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">Different Types of Loops</h1><p class="page-description">A sample subject for our lesson on Iteration.</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-11-17T00:00:00-06:00" itemprop="datePublished">
+    <h1 class="post-title p-name" itemprop="name headline">Different Types of Loops</h1><p class="page-description">A lesson on different types of loops you can use.</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-11-17T00:00:00-06:00" itemprop="datePublished">
         Nov 17, 2022
       </time>
        • <span class="read-time" title="Estimated read time">
     
     
-      2 min read
+      3 min read
     
 </span></p>
 
-    
-      <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
-      
-        <a class="category-tags-link" href="/deli/categories/#python">python</a>
-        
-      
-      </p>
     
 
     
@@ -178,6 +171,61 @@ window.onload = wrap_img;
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<p>For loops are mostly useful for applying a function to everything in a list one-by-one. It's technically possible to make for loops act the same as other loops, but it often takes a lot more work-arounds.</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">numlist</span> <span class="o">=</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">93</span><span class="p">,</span> <span class="mi">247</span><span class="p">,</span> <span class="mi">33338</span><span class="p">,</span> <span class="mi">32</span><span class="p">,</span> <span class="mi">211</span><span class="p">]</span>
+<span class="n">newlist</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">number</span> <span class="ow">in</span> <span class="n">numlist</span><span class="p">:</span>
+    <span class="c1">#this loop generates a new list with the numlist values divided by 2</span>
+    <span class="n">newlist</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">number</span> <span class="o">/</span> <span class="mi">2</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">newlist</span><span class="p">)</span>
+
+<span class="c1">#it is more difficult, for example, to detect the index of the list objects</span>
+<span class="n">newerlist</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">index</span> <span class="o">=</span> <span class="mi">0</span> <span class="c1">#with this loop, this new variable is necessary</span>
+<span class="k">for</span> <span class="n">number</span> <span class="ow">in</span> <span class="n">numlist</span><span class="p">:</span> <span class="c1">#this only applies the division to even indexes</span>
+    <span class="k">if</span> <span class="n">index</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">newerlist</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">number</span> <span class="o">/</span> <span class="mi">2</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">newerlist</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">number</span><span class="p">)</span>
+    <span class="n">index</span> <span class="o">+=</span> <span class="mi">1</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">newerlist</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[1.5, 3.0, 46.5, 123.5, 16669.0, 16.0, 105.5]
+[1.5, 6, 46.5, 247, 16669.0, 32, 105.5]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Recursive-Loops">Recursive Loops<a class="anchor-link" href="#Recursive-Loops"> </a></h2><p>Recursive loops can be created in multiple different ways, and involve incrementing a variable until it reaches a certain break point. This can be a good type of loop to use when you want to limit the starting point, for example.</p>
 
 </div>
@@ -237,6 +285,57 @@ Scams
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<p>Unlike the for loop from before, because <code>i</code> always represents the current index of the list in question, we don't need to include the extra <code>index</code> variable.</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">numlist</span> <span class="o">=</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">93</span><span class="p">,</span> <span class="mi">247</span><span class="p">,</span> <span class="mi">33338</span><span class="p">,</span> <span class="mi">32</span><span class="p">,</span> <span class="mi">211</span><span class="p">]</span>
+<span class="n">newerlist</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">def</span> <span class="nf">recursive_num</span><span class="p">(</span><span class="n">i</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">numlist</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">i</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="n">newerlist</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">numlist</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">/</span> <span class="mi">2</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">newerlist</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">numlist</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+        <span class="n">recursive_num</span><span class="p">(</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">newerlist</span><span class="p">)</span>
+<span class="c1">#even though we were able to omit that index variable,</span>
+<span class="c1">#some would argue this is more complicated</span>
+<span class="n">recursive_num</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[1.5, 6, 46.5, 247, 16669.0, 32, 105.5]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="While-Loops">While Loops<a class="anchor-link" href="#While-Loops"> </a></h2><p>While loops are very similar to recursive loops, but with a different syntax.</p>
 <p>While loops don't require a function that is then called again within the original function until a condition is met. While functions perform all the way through, and if the condition is still satisfied afterward, the while loop will repeat again.</p>
 
@@ -274,6 +373,56 @@ Scams
 Text
 For
 Learning
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>And here's a while loop version of the function from before.</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">numlist</span> <span class="o">=</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">93</span><span class="p">,</span> <span class="mi">247</span><span class="p">,</span> <span class="mi">33338</span><span class="p">,</span> <span class="mi">32</span><span class="p">,</span> <span class="mi">211</span><span class="p">]</span>
+<span class="n">newerlist</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">def</span> <span class="nf">while_num</span><span class="p">():</span>
+    <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">while</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">numlist</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">i</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="n">newerlist</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">numlist</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">/</span> <span class="mi">2</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">newerlist</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">numlist</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+        <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">newerlist</span><span class="p">)</span>
+<span class="c1">#this version has a bit less clutter than recursive with one less if/else</span>
+<span class="n">while_num</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[1.5, 6, 46.5, 247, 16669.0, 32, 105.5]
 </pre>
 </div>
 </div>
@@ -340,7 +489,7 @@ Learning
 
 
 
-  </div><a class="u-url" href="/deli/iterationsample/" hidden></a>
+  </div><a class="u-url" href="/deli/diftypesofloops/" hidden></a>
 </article>
 
       </div>
