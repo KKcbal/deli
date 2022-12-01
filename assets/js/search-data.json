@@ -3,7 +3,7 @@
     
         "post0": {
             "title": "3.10 Lists",
-            "content": "",
+            "content": "List Operations . Pseudocode Operation Python Syntax Description . aList[i] | | Accesses the element of aList at index i | . x ← aList[i] | | Assigns the element of aList at index i to a variable &#39;x&#39; | . aList[i] ← x | | Assigns the value of a variable &#39;x&#39; to the element of a List at index i | . aList[i] ← aList[j] | | Assigns value of aList[j] to aList[i] | . INSERT(aList, i, value) | | value is placed at index i in aList. Any element at an index greater than i will shiftone position to the right. | . APPEND(aList, value) | | value is added as an element to the end of aListand length of aList is increased by 1 | . REMOVE(aList, i) | | Removes item at index i and any values at indices greater than i shift to the left. Length of aList decreased by 1. | .",
             "url": "https://kkcbal.github.io/deli/lists/",
             "relUrl": "/lists/",
             "date": " • Nov 30, 2022"
