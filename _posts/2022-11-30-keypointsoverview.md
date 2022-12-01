@@ -2,8 +2,7 @@
 title: 3.8 Iteration and 3.10 Lists - Overview
 toc: true
 layout: post
-description: A minimal example of using markdown with fastpages.
-categories: [markdown]
+description: Some key takeaways for both of the lessons.
 ---
 
 # Overview
