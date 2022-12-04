@@ -8,8 +8,8 @@
 <meta name="generator" content="Jekyll v4.1.1" />
 <meta property="og:title" content="Lists and Iteration Homework" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Try to complete this to show understanding!" />
-<meta property="og:description" content="Try to complete this to show understanding!" />
+<meta name="description" content="Try to complete this to show understanding! Copy this into your notebook so you can also take notes as we lecture. Make a copy of this notebook to your own repository to take notes, do the class challenges, and to access the homework." />
+<meta property="og:description" content="Try to complete this to show understanding! Copy this into your notebook so you can also take notes as we lecture. Make a copy of this notebook to your own repository to take notes, do the class challenges, and to access the homework." />
 <link rel="canonical" href="https://kkcbal.github.io/deli/homework/" />
 <meta property="og:url" content="https://kkcbal.github.io/deli/homework/" />
 <meta property="og:site_name" content="DeLi" />
@@ -18,7 +18,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Lists and Iteration Homework" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-11-26T00:00:00-06:00","datePublished":"2022-11-26T00:00:00-06:00","description":"Try to complete this to show understanding!","headline":"Lists and Iteration Homework","mainEntityOfPage":{"@type":"WebPage","@id":"https://kkcbal.github.io/deli/homework/"},"url":"https://kkcbal.github.io/deli/homework/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-11-26T00:00:00-06:00","datePublished":"2022-11-26T00:00:00-06:00","description":"Try to complete this to show understanding! Copy this into your notebook so you can also take notes as we lecture. Make a copy of this notebook to your own repository to take notes, do the class challenges, and to access the homework.","headline":"Lists and Iteration Homework","mainEntityOfPage":{"@type":"WebPage","@id":"https://kkcbal.github.io/deli/homework/"},"url":"https://kkcbal.github.io/deli/homework/"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/deli/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://kkcbal.github.io/deli/feed.xml" title="DeLi" /><link rel="shortcut icon" type="image/x-icon" href="/deli/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -73,13 +73,13 @@ window.onload = wrap_img;
         <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">Lists and Iteration Homework</h1><p class="page-description">Try to complete this to show understanding!</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-11-26T00:00:00-06:00" itemprop="datePublished">
+    <h1 class="post-title p-name" itemprop="name headline">Lists and Iteration Homework</h1><p class="page-description">Try to complete this to show understanding! Copy this into your notebook so you can also take notes as we lecture. Make a copy of this notebook to your own repository to take notes, do the class challenges, and to access the homework.</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-11-26T00:00:00-06:00" itemprop="datePublished">
         Nov 26, 2022
       </time>
        • <span class="read-time" title="Estimated read time">
     
     
-      2 min read
+      4 min read
     
 </span></p>
 
@@ -117,6 +117,8 @@ window.onload = wrap_img;
 
   <div class="post-content e-content" itemprop="articleBody">
     <ul id="toc" class="section-nav">
+<li class="toc-entry toc-h2"><a href="#Overview-and-Notes:--3.10---Lists">Overview and Notes:  3.10 - Lists </a></li>
+<li class="toc-entry toc-h2"><a href="#Overview-and-Notes:--3.8---Iteration">Overview and Notes:  3.8 - Iteration </a></li>
 <li class="toc-entry toc-h2"><a href="#Homework-Assignment">Homework Assignment </a>
 <ul>
 <li class="toc-entry toc-h3"><a href="#Hacks">Hacks </a></li>
@@ -140,10 +142,94 @@ window.onload = wrap_img;
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Overview-and-Notes:--3.10---Lists">
+<a class="anchor" href="#Overview-and-Notes:--3.10---Lists" aria-hidden="true"><span class="octicon octicon-link"></span></a>Overview and Notes:  3.10 - Lists<a class="anchor-link" href="#Overview-and-Notes:--3.10---Lists"> </a>
+</h2>
+<p>Here are some key takeaways.</p>
+<ul>
+<li>Lists are a good way to organize and collect data in a program, as they allow a set of potentially very different items to be found within one object.</li>
+<li>Items in lists are located with indexes, which, in most code languages, start with 0 (though the pseudocode used by CollegeBoard usually starts at 1!).</li>
+<li>Using functions like append(), pop(), and insert(), you can add new things to a list or remove them.
+Keeping items within lists allow you to apply a function to each item of a list using iteration.<br>
+</li>
+</ul>
+<p>Fill out the empty boxes:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">Pseudocode Operation</th>
+<th>Python Syntax</th>
+<th style="text-align:center">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">?</td>
+<td>aList[i]</td>
+<td style="text-align:center"><em>Accesses the element of aList at index i</em></td>
+</tr>
+<tr>
+<td style="text-align:center">x ← aList[i]</td>
+<td>?</td>
+<td style="text-align:center"><em>Assigns the element of aList at index i <br>to a variable 'x'</em></td>
+</tr>
+<tr>
+<td style="text-align:center">?</td>
+<td>aList(i) = x</td>
+<td style="text-align:center"><em>Assigns the value of a variable 'x' to <br>the element of a List at index i</em></td>
+</tr>
+<tr>
+<td style="text-align:center">aList[i] ← aList[j]</td>
+<td>?</td>
+<td style="text-align:center"><em>Assigns value of aList[j] to aList[i]</em></td>
+</tr>
+<tr>
+<td style="text-align:center">?</td>
+<td>aList.insert(i, value)</td>
+<td style="text-align:center"><em>value is placed at index i in aList. Any <br>element at an index greater than i will shift<br>one position to the right. </em></td>
+</tr>
+<tr>
+<td style="text-align:center">APPEND(aList, value)</td>
+<td>aList.append(value)</td>
+<td style="text-align:center">?</td>
+</tr>
+<tr>
+<td style="text-align:center">?</td>
+<td>aList.pop(i)<br>OR<br>aList.remove(value)</td>
+<td style="text-align:center"><em>Removes item at index i and any values at <br>indices greater than i shift to the left. <br>Length of aList decreased by 1. </em></td>
+</tr>
+</tbody>
+</table>
+<p>Add your <mark>OWN</mark> Notes for 3.10 here:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Overview-and-Notes:--3.8---Iteration">
+<a class="anchor" href="#Overview-and-Notes:--3.8---Iteration" aria-hidden="true"><span class="octicon octicon-link"></span></a>Overview and Notes:  3.8 - Iteration<a class="anchor-link" href="#Overview-and-Notes:--3.8---Iteration"> </a>
+</h2>
+<p>Here are some key takeaways.</p>
+<ul>
+<li>Iteration is the repetition of a function. Allowing a function to repeat on its own based on various conditions can vastly optimize a program.</li>
+<li>Iteration is most often done with loops, typically in combination with lists and/or dictionaries.</li>
+<li>There are multiple types of loops, and while most types can, in some way, do the same thing as other types, some things are simpler to do with certain loops than others.</li>
+<li>Iteration and loops go together like bread and butter.</li>
+</ul>
+<p>Add your <mark>OWN</mark> Notes for 3.8 here:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Homework-Assignment">
 <a class="anchor" href="#Homework-Assignment" aria-hidden="true"><span class="octicon octicon-link"></span></a>Homework Assignment<a class="anchor-link" href="#Homework-Assignment"> </a>
 </h2>
-<p>Instead of us making a quiz for you to take, we would like YOU to make a quiz about the stuff we talked about.</p>
+<p>Instead of us making a quiz for you to take, we would like YOU to make a quiz about the material we reviewed.</p>
 <p>We would like you to <mark>input questions into a list</mark>, and use some sort of iterative system to print the questions, detect an input, and determine if you answered correctly. There should be <em>at least</em> <mark>five questions</mark>, each with <em>at least</em> <mark>three possible answers</mark>.</p>
 <p>You may use the template below as a framework for this assignment.</p>
 
