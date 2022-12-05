@@ -1,5 +1,5 @@
 ---
-title: 3.8 Iteration and 3.10 Lists - Overview
+title: 3.8 Iteration and 3.10 Lists - Key Points
 toc: true
 layout: post
 description: Some key takeaways for both of the lessons.
