@@ -85,10 +85,18 @@ window.onload = wrap_img;
 
 <div class="container">
   <h1>404</h1>
-  <p><strong>Page not found :(</strong></p>
-  <p>The requested page could not be found.</p>
+  <p><strong>I know where you live</strong></p>
+  <p id="demo">The requested page could not be found.</p>
 </div>
-
+<script>
+  let text = "";
+  let i = 0
+  while (i < 100) {
+    text += "NIGHTMARE ";
+    i++
+  }
+  document.getElementById("demo").innerHTML = text;
+</script>
       </div>
     </main><footer class="site-footer h-card">
   <data class="u-url" href="/deli/"></data>
